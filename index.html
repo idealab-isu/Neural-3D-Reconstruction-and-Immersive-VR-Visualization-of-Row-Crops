@@ -378,41 +378,115 @@ Plant phenotyping in precision agriculture increasingly requires high-fidelity t
 <!-- End paper abstract -->
 
 
-<!-- Video carousel -->
+<!-- =========================
+     Video Carousel Section
+     Edit only:
+     1) section title/description
+     2) video file paths
+     3) poster image paths (optional)
+     4) video labels/classes if needed
+========================= -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      
+      <!-- Section heading -->
       <h2 class="title is-3">3D Reconstruction Across Growth Stages</h2>
-       <p class="has-text-grey mt-4">
-              NeRF-based 3D point cloud reconstructions capturing the full growth cycle of Cereal plants, from early development to maturity. Each model represents a distinct growth stage, providing a consistent and detailed 3D view of plant structural and morphological evolution over time.
-          </p>
+      
+      <!-- Section description -->
+      <p class="has-text-grey mt-4">
+        NeRF-based 3D point cloud reconstructions capturing the full growth cycle of cereal plants,
+        from early development to maturity. Each model represents a distinct growth stage,
+        providing a consistent and detailed 3D view of plant structural and morphological
+        evolution over time.
+      </p>
+
+      <!-- Carousel wrapper -->
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/BBCH_stageVideo _compress.mp4" type="video/mp4">
+
+        <!-- Video 1 -->
+        <div class="item">
+          <!-- Replace poster path if you have a preview image. Leave empty if not needed. -->
+          <video
+            id="video1"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="">
+            <source src="static/videos/FingerMillet.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+        <!-- Video 2 -->
+        <div class="item">
+          <video
+            id="video2"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="">
+            <source src="static/videos/ProsoMillet.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="item">
+          <video
+            id="video3"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="">
             <source src="static/videos/Mungbeans.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+
+        <!-- Video 4 -->
+        <div class="item">
+          <video
+            id="video4"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="">
+            <!-- Change this file path -->
+            <source src="static/videos/AmarilloPeas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
+
+        <!-- Video 5 -->
+        <div class="item">
+          <video
+            id="video5"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="">
+            <!-- Change this file path -->
+            <source src="static/videos/DeltaPeas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Video Carousel Section -->
 
 <!-- BBCH Growth Stage Video -->
 <section class="hero is-small is-light">

@@ -140,6 +140,21 @@ body {
   height: 100%;
   border-radius: var(--border-radius-lg);
 }
+.fullwidth-video {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.fullwidth-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* CLEAN, SHARP LOOK */
+  border-radius: 0;
+  box-shadow: none;
+  background: #ffffff;
+}
 
 .publication-header .hero-body {
   padding: 6rem 1.5rem 4rem;
@@ -269,6 +284,13 @@ body {
   transition: var(--transition);
   border: 1px solid var(--border-color);
 }
+
+.publication-video video {
+  width: 100%;
+  border-radius: 16px;
+  background: #000;
+}
+
 
 .results-carousel .item:hover {
   transform: translateY(-4px);
@@ -748,6 +770,3 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
-
-

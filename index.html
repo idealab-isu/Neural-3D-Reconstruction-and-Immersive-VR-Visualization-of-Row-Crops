@@ -241,24 +241,50 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Neural 3D Reconstruction and Immersive VR Visualization of Row Crops Across Phenological Growth Stages</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
+            <span class="author-block">
+               <a href="https://www.linkedin.com/in/joshi-shambhavi/" target="_blank">Shambhavi Joshi</a>,
+            </span>
+            <span class="author-block">
+             <a href="https://www.linkedin.com/in/juanidisalvo/" target="_blank">Juan Di Salvo</a>,
+            </span>
+            <span class="author-block">
+            <a href="https://www.linkedin.com/in/yanben-shen-25807b356/" target="_blank">Yanben Shen,</a>
+            </span>
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+            <a href=" https://www.linkedin.com/in/mozhgan-hadadi/" target="_blank">Mozhgan Hadadi,</a>
+            </span>
+              <span class="author-block">
+            <a href="https://www.linkedin.com/in/boddepalli89/" target="_blank">Venkata Naresh Boddepalli,</a>
+            </span>
+             <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=P3h1SM0AAAAJ&hl=en" target="_blank">Talukder Jubery,</a>
+            </span>
+              <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=-rmRjqIAAAAJ&hl=en&oi=ao" target="_blank">Soumik Sarkar,</a>
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=P-GSJbwAAAAJ&hl=en&oi=ao" target="_blank">Arti Singh,</a>
+              </span>
+              <span class="author-block">
+                <a href="https://www.me.iastate.edu/bglab/" target="_blank">Baskar Ganapathysubramanian,</a>
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/asheesh-singh-b11701293/" target="_blank">Asheesh K. Singh,</a>
+              </span>
+              <span class="author-block">
+               <a href="https://scholar.google.com/citations?user=iVTMSxoAAAAJ&hl=en&oi=ao" target="_blank">Adarsh Krishnamurthy</a>
+              </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Iowa State University<br>Smart Agriculture Technology</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -314,23 +340,23 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
+       <img src="static/images/Teaser.png" alt="Pipeline">
+
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      Real capture → NeRF / GSplat reconstruction → Unreal Engine visualization.
+
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
+
+ 
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -341,7 +367,8 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+Plant phenotyping in precision agriculture increasingly requires high-fidelity three-dimensional reconstruction and accessible visualization methods. This study presents an integrated pipeline combining Neural Radiance Fields (NeRF), 3D Gaussian Splatting (G-Splat), and Virtual Reality (VR) visualization for comprehensive plant analysis across developmental stages. We collected multi-view imagery of finger millet, proso millet, mungbean, and field pea under controlled greenhouse conditions, aligning data acquisition with standardized BBCH phenological scales. Camera pose estimation was performed using GLOMAP, followed by reconstruction via both Nerfacto and G-Splat implementations. Quantitative evaluation using PSNR, SSIM, and LPIPS metrics revealed complementary strengths of the two approaches: G-Splat achieved superior structural fidelity, while NeRF provided enhanced perceptual realism. Both reconstruction methods were successfully integrated into an immersive VR greenhouse environment deployed on Meta Quest headsets, maintaining consistently high framerates. This framework establishes a practical foundation for incorporating neural reconstruction and immersive technologies into agricultural phenotyping workflows, supporting both research applications and educational engagement.
+
           </p>
         </div>
       </div>
@@ -351,6 +378,112 @@
 <!-- End paper abstract -->
 
 
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">3D Reconstruction Across Growth Stages</h2>
+       <p class="has-text-grey mt-4">
+              NeRF-based 3D point cloud reconstructions capturing the full growth cycle of Cereal plants, from early development to maturity. Each model represents a distinct growth stage, providing a consistent and detailed 3D view of plant structural and morphological evolution over time.
+          </p>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/BBCH_stageVideo _compress.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- BBCH Growth Stage Video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">3D Reconstruction Across Growth Stages</h2>
+  <p class="has-text-grey mt-4">
+              NeRF-based 3D point cloud reconstructions capturing the full growth cycle of proso millet, from early development to maturity. Each model represents a distinct growth stage, providing a consistent and detailed 3D view of plant structural and morphological evolution over time.
+          </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+   <div class="fullwidth-video">
+    <video
+      src="static/videos/BBCH_stageVideo _compress.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      controls
+    ></video>
+  </div>
+</section>
+        
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End BBCH Growth Stage Video -->
+
+<!--  image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+       <img src="static/images/3drecon_nerf.png" alt="Result">
+
+      <h2 class="subtitle has-text-centered">
+       NeRF reconstructions for each plant species with corresponding BBCH labels shown beneath each reconstruction to indicate growth
+progression.
+
+
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- image -->
+
+
+<!--  image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+       <img src="static/images/Greenhouse_VR.png" alt="Greenhouse">
+
+      <h2 class="subtitle has-text-centered">
+       Virtual greenhouse visualization showing reconstructed millet, mungbean, and pea plants with interactive growth-stage information
+panels. Each plant is paired with descriptive notecards displaying collection dates, growth stages, and visual references, providing an immersive
+environment for comparative analysis of plant development in 3D.
+
+
+
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- image -->
+    
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">

@@ -528,47 +528,34 @@ This is followed by a change-of-basis transformation and a scaling adjustment fo
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Visual Comparison</h2>
-    <div class="content has-text-centered">
+    <h2 class="title is-3 has-text-centered">
+      Qualitative Evaluation of NeRF and G-Splat Reconstructions
+    </h2>
+
+    <div class="content has-text-centered" style="max-width: 950px; margin: 0 auto 2rem auto;">
       <p>
-        Compare the reconstructed result with the reference image using the slider.
+        We compare reconstruction results from NeRF and Gaussian Splatting on both training (seen) and novel (unseen) viewpoints.
+        This highlights each method’s ability to preserve fine details, maintain geometric structure, and generalize beyond observed views.
       </p>
     </div>
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div id="example1" class="bal-container-small">
+    <div class="columns is-centered is-variable is-6">
+      <div class="column">
+        <h4 class="title is-5 has-text-centered">Trained (Seen) Viewpoints</h4>
+        <figure class="image">
+          <img src="static/images/Trained.png" alt="Trained viewpoints comparison for NeRF and G-Splat">
+        </figure>
+      </div>
 
-          <!-- Right side / revealed when dragging left -->
-          <div class="bal-after">
-            <img src="static/images/Nerf.jpg" alt="Reconstructed Result"> 
-            <div class="bal-afterPosition afterLabel">
-              Reconstructed Result
-            </div>
-          </div>
-
-          <!-- Left side / initial side -->
-          <div class="bal-before">
-            <div class="bal-before-inset">
-              <img src="static/images/Gsplat.jpg" alt="Reference Image"> 
-              <div class="bal-beforePosition beforeLabel">
-                Reference Image
-              </div>
-            </div>
-          </div>
-
-          <!-- Handle -->
-          <div class="bal-handle">
-            <span class="handle-left-arrow"></span>
-            <span class="handle-right-arrow"></span>
-          </div>
-
-        </div>
+      <div class="column">
+        <h4 class="title is-5 has-text-centered">Unseen (Novel) Viewpoints</h4>
+        <figure class="image">
+          <img src="static/images/Unseen.png" alt="Unseen viewpoints comparison for NeRF and G-Splat">
+        </figure>
       </div>
     </div>
   </div>
 </section>
-    
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">

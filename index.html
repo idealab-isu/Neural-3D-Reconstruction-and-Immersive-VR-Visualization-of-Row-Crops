@@ -517,25 +517,33 @@ progression.
 <!-- image -->
 
 
-<!--  image-->
+<!-- video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-       <img src="static/images/Greenhouse_VR.png" alt="Greenhouse">
 
-      <h2 class="subtitle has-text-centered">
-       Virtual greenhouse visualization showing reconstructed millet, mungbean, and pea plants with interactive growth-stage information
-panels. Each plant is paired with descriptive notecards displaying collection dates, growth stages, and visual references, providing an immersive
-environment for comparative analysis of plant development in 3D.
-
-
-
+      <!-- Section Heading -->
+      <h2 class="title is-3 has-text-centered">
+        COLMAP to Unreal Engine Pose Conversion for Quantitative Evaluation
       </h2>
+
+      <!-- Video -->
+      <video autoplay loop muted playsinline width="100%">
+        <source src="static/video/PoseConversion.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Description -->
+      <h2 class="subtitle has-text-centered">
+        The reconstruction quality is assessed using PSNR, SSIM, and LPIPS, referencing the original input images. 
+To transform camera poses from COLMAP to Unreal Engine (UE), the coordinate axes are remapped to fit Unreal's conventions. 
+This is followed by a change-of-basis transformation and a scaling adjustment for unit differences. The resulting poses can be used to load cameras accurately in Unreal Engine.
+      </h2>
+
     </div>
   </div>
 </section>
-<!-- image -->
+<!-- video -->
     
 <!-- Image carousel -->
 <section class="hero is-small">

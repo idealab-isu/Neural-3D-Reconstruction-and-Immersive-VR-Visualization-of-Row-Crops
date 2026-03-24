@@ -524,175 +524,50 @@ This is followed by a change-of-basis transformation and a scaling adjustment fo
     </div>
   </div>
 </section>
-<!-- video --
+<!-- video -->
 
-<!-- Comparison Slider Section -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Interactive Comparison Slider</h2>
+    <h2 class="title is-3 has-text-centered">Visual Comparison</h2>
+    <div class="content has-text-centered">
+      <p>
+        Compare the reconstructed result with the reference image using the slider.
+      </p>
+    </div>
 
-    <div class="comparison-slider" id="comparisonSlider">
-      <!-- Bottom image -->
-      <img src="static/images/Nerf.jpg" alt="After" class="comparison-img">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div id="example1" class="bal-container-small">
 
-      <!-- Top image wrapper -->
-      <div class="comparison-overlay" id="comparisonOverlay">
-        <img src="static/images/Gsplat.jpg" alt="Before" class="comparison-img">
+          <!-- Right side / revealed when dragging left -->
+          <div class="bal-after">
+            <img src="static/images/output.png" alt="Reconstructed Result">
+            <div class="bal-afterPosition afterLabel">
+              Reconstructed Result
+            </div>
+          </div>
+
+          <!-- Left side / initial side -->
+          <div class="bal-before">
+            <div class="bal-before-inset">
+              <img src="static/images/reference.png" alt="Reference Image">
+              <div class="bal-beforePosition beforeLabel">
+                Reference Image
+              </div>
+            </div>
+          </div>
+
+          <!-- Handle -->
+          <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Divider -->
-      <div class="comparison-divider" id="comparisonDivider">
-        <div class="comparison-handle"></div>
-      </div>
-
-      <!-- Range input -->
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="comparison-range"
-        id="comparisonRange"
-        aria-label="Comparison slider"
-      >
-
-      <!-- Labels -->
-      <span class="comparison-label left-label">Before</span>
-      <span class="comparison-label right-label">After</span>
     </div>
   </div>
 </section>
-
-<style>
-.comparison-slider {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  line-height: 0;
-}
-
-.comparison-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  user-select: none;
-  pointer-events: none;
-}
-
-.comparison-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.comparison-overlay img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.comparison-divider {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background: white;
-  transform: translateX(-50%);
-  z-index: 3;
-  pointer-events: none;
-}
-
-.comparison-handle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: white;
-  border: 2px solid #444;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-}
-
-.comparison-handle::before,
-.comparison-handle::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #444;
-  border-right: 2px solid #444;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.comparison-handle::before {
-  left: 8px;
-  transform: translateY(-50%) rotate(225deg);
-}
-
-.comparison-handle::after {
-  right: 8px;
-}
-
-.comparison-range {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: ew-resize;
-  z-index: 4;
-}
-
-.comparison-label {
-  position: absolute;
-  top: 16px;
-  z-index: 5;
-  padding: 6px 10px;
-  font-size: 14px;
-  line-height: 1;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  border-radius: 999px;
-}
-
-.left-label {
-  left: 16px;
-}
-
-.right-label {
-  right: 16px;
-}
-</style>
-
-<script>
-(function () {
-  const range = document.getElementById("comparisonRange");
-  const overlay = document.getElementById("comparisonOverlay");
-  const divider = document.getElementById("comparisonDivider");
-
-  function updateSlider(value) {
-    overlay.style.width = value + "%";
-    divider.style.left = value + "%";
-  }
-
-  range.addEventListener("input", function () {
-    updateSlider(this.value);
-  });
-
-  updateSlider(range.value);
-})();
-</script>
-  
     
 <!-- Image carousel -->
 <section class="hero is-small">

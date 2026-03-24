@@ -391,11 +391,12 @@ Plant phenotyping in precision agriculture increasingly requires high-fidelity t
     <div class="container">
       
       <!-- Section heading -->
-      <h2 class="title is-3">3D Reconstruction Across Growth Stages</h2>
+      <h2 class="title is-3 has-text-centered">3D Reconstruction Across Growth Stages</h2>
       
       <!-- Section description -->
-      <p class="has-text-grey mt-4">
-        NeRF-based 3D point cloud reconstructions capturing the full growth cycle of cereal plants,
+        <div class="content has-text-centered" style="max-width: 950px; margin: 0 auto 2rem auto;">
+      <p>
+        NeRF-based 3D point cloud reconstructions capturing the full growth cycle of various plants,
         from early development to maturity. Each model represents a distinct growth stage,
         providing a consistent and detailed 3D view of plant structural and morphological
         evolution over time.
@@ -504,22 +505,25 @@ Plant phenotyping in precision agriculture increasingly requires high-fidelity t
     <div class="hero-body">
 
       <!-- Section Heading -->
-      <h2 class="title is-3">
+      <h2 class="title is-3 has-text-centered">
         COLMAP to Unreal Engine Pose Conversion for Quantitative Evaluation
       </h2>
-
+      
+<!-- Description -->
+      <div class="content has-text-centered" style="max-width: 950px; margin: 0 auto 2rem auto;">
+      <p>
+        The reconstruction quality is assessed using PSNR, SSIM, and LPIPS, referencing the original input images. 
+To transform camera poses from COLMAP to Unreal Engine (UE), the coordinate axes are remapped to fit Unreal's conventions. 
+This is followed by a change-of-basis transformation and a scaling adjustment for unit differences. The resulting poses can be used to load cameras accurately in Unreal Engine.
+      </p>
+      
       <!-- Video -->
       <video autoplay loop muted playsinline width="100%">
         <source src="static/videos/PoseConversion.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
-      <!-- Description -->
-      <h2 class="subtitle has-text-centered">
-        The reconstruction quality is assessed using PSNR, SSIM, and LPIPS, referencing the original input images. 
-To transform camera poses from COLMAP to Unreal Engine (UE), the coordinate axes are remapped to fit Unreal's conventions. 
-This is followed by a change-of-basis transformation and a scaling adjustment for unit differences. The resulting poses can be used to load cameras accurately in Unreal Engine.
-      </h2>
+      
 
     </div>
   </div>
@@ -567,8 +571,8 @@ This is followed by a change-of-basis transformation and a scaling adjustment fo
       <h2 class="title is-3 has-text-centered">
         Virtual Greenhouse Walkthrough
       </h2>
-
-      <div class="content has-text-centered" style="max-width: 900px; margin: 0 auto 2rem auto;">
+<div class="content has-text-centered" style="max-width: 950px; margin: 0 auto 2rem auto;">
+    
         <p>
           The integrated virtual greenhouse platform combines optimized visualization, interactive features,
           and immersive exploration to enhance both data interpretability and user engagement. By balancing

@@ -1,80 +1,107 @@
-# Academic Project Page Template
+#  Neural 3D Reconstruction and Immersive VR Visualization of Row Crops Across Phenological Growth Stages
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+This repository contains the official implementation and resources for our **published paper** on integrating **Neural Radiance Fields (NeRF)**, **3D Gaussian Splatting (G-Splat)**, and **Virtual Reality (VR)** for plant phenotyping across BBCH growth stages.
 
-A clean, responsive template for academic project pages.
+---
 
+## Overview
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+We present a unified pipeline that bridges **image-based 3D reconstruction** and **immersive visualization** for agricultural analysis.
 
+The workflow includes:
 
+- Multi-view plant data acquisition in controlled greenhouse environments  
+- Camera pose estimation using a globally optimized SfM pipeline (GLOMAP)  
+- High-fidelity 3D reconstruction using NeRF (Nerfacto) and G-Splat  
+- Alignment with **BBCH growth stages** for biologically meaningful analysis  
+- Real-time rendering and interaction in a VR greenhouse (Unreal Engine, Meta Quest)  
 
-## Start using the template
-To start using the template click on `Use this Template`.
+This system enables both:
+- **Quantitative evaluation** (PSNR, SSIM, LPIPS)  
+- **Qualitative exploration** through immersive VR  
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+---
+## Paper Website  
+[Website Link](https://idealab-isu.github.io/Neural-3D-Reconstruction-and-Immersive-VR-Visualization-of-Row-Crops/)
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+## Paper
 
-## What's New
+Read the full paper here:  
+[Paper Link](https://www.sciencedirect.com/science/article/pii/S2772375526002479)
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+---
 
-## Components
+## Dataset
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
+Access the dataset used in this study:  
+ [Dataset Link](INSERT_DATASET_LINK_HERE)
 
-## Customization
+The dataset includes:
 
-The HTML file has TODO comments showing what to replace:
+- Multi-view RGB image sequences (video-derived + photogrammetry)  
+- BBCH-labeled plant growth stages  
+- Multiple crop species (millets, mungbean, Delta & Amarillo peas)  
+- Image sets for both **training (known views)** and **evaluation (unseen views)**  
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
+---
 
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
+##  Code
 
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
+All code used in this paper is provided in the `code/` folder.
 
-## Tips
+This includes components for: 
+- NeRF and G-Splat reconstruction workflows  
+- Integration with Unreal Engine for VR visualization  
 
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+---
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+## Tutorial Video
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+A tutorial demonstrating how to **convert COLMAP poses to Unreal Engine** will be available here:  
+[Video Link](INSERT_VIDEO_LINK_HERE)
+
+---
+
+## Key Components
+
+- **Pose Estimation:** GLOMAP (global SfM, COLMAP-based)  
+- **Reconstruction:** Nerfacto (NeRF) + 3D Gaussian Splatting  
+- **Rendering & VR:** Unreal Engine (Meta Quest deployment)  
+- **Evaluation Metrics:** PSNR, SSIM, LPIPS  
+
+---
+
+##  Key Insights
+
+- **NeRF** provides strong perceptual realism and smooth radiance consistency  
+- **G-Splat** achieves better structural fidelity and real-time rendering efficiency  
+- Both methods run at **real-time VR performance (~72 FPS)** on standalone headsets  
+- The combined pipeline enables scalable and interpretable **3D plant phenotyping**
+
+---
+
+##  Applications
+
+- Plant phenotyping and growth analysis  
+- Precision agriculture workflows  
+- Digital twins of crops  
+- Immersive scientific visualization and education  
+
+---
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{joshi2026neural,
+  title={Neural 3D Reconstruction and Immersive VR Visualization of Row Crops Across Phenological Growth Stages},
+  author={Joshi, Shambhavi and Di Salvo, Juan and Shen, Yanben and Hadadi, Mozhgan and Boddepalli, Venkata Naresh and Jubery, Zaki and Sarkar, Soumik and Singh, Arti and Ganapathysubramanian, Baskar and Singh, Asheesh K and others},
+  journal={Smart Agricultural Technology},
+  pages={102024},
+  year={2026},
+  publisher={Elsevier}
+}
+```
+
+---

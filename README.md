@@ -34,7 +34,7 @@ Read the full paper here:
 ## Dataset
 
 Access the dataset used in this study:  
- [Dataset Link](INSERT_DATASET_LINK_HERE)
+ [Dataset Link](https://huggingface.co/datasets/ShambhaviJoshi/Neural_3D_Reconstruction_and_Immersive_VR_Visualization_of_Row_Crops)
 
 The dataset includes:
 
